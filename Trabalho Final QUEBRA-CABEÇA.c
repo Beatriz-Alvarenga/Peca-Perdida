@@ -2,7 +2,7 @@
 
 int scanSomatoriaPecas(int Nqb) {
     int somaP = 0, // declaração da variável somaP (Soma das Peças)
-        Npecas = 0; // declaração da variável Npecas (Número de Peças)
+        Npecas = 0, // declaração da variável Npecas (Número de Peças)
         i = 0; // declaração da variável i (Iterador)
     for(i = 0; i < Nqb - 1 ; i++){ // Laço de repetição para receber os números das peças que temos (Nqb - 1)
         scanf("%d", &Npecas); // Recebendo os valores das peças que temos (de 1 até Nqb - 1)
@@ -28,7 +28,7 @@ int main() {
     
     diff = somaN - somaP; // Fazendo a diferença entre as variáveis para resultar no número da peça que falta
     
-    printf("%d", diff); // Printando a peça que faltava
+    printf("%d\n", diff); // Printando a peça que faltava
 
     return 0; // Fim :)
 }
